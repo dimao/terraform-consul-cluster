@@ -2,9 +2,9 @@
 
 Configuration for consul cluster deployment with automatic SaltStack provision
 
-Usage Example:
+## Usage Example:
 
-### main.tf:
+#### main.tf:
 ```
    module "virtual-machine" {
      source                = "git::https:// gitlab.intes.by/terraform/      vsphere-virtual-machine.git"
@@ -26,12 +26,12 @@ Usage Example:
      tag_name              = "consul-server"
    }
 ```
-## provision.sh:
+#### provision.sh:
 
 Define SALT_VERSION and BOOTSTRAP_SALT_CHECKSUM from salt-bootstrap [GitHub]
 
-```
-terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
+```console
+user@host:~$ terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
 ```
 
 [GitHub]: https://github.com/saltstack/salt-bootstrap
