@@ -4,6 +4,10 @@ Configuration for consul cluster deployment with automatic SaltStack provision
 
 ## Usage Example:
 
+```console
+user@host:~$ terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
+```
+
 #### main.tf:
 ```
    module "virtual-machine" {
@@ -30,8 +34,6 @@ Configuration for consul cluster deployment with automatic SaltStack provision
 
 Define SALT_VERSION and BOOTSTRAP_SALT_CHECKSUM from salt-bootstrap [GitHub]
 
-```console
-user@host:~$ terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
-```
+
 
 [GitHub]: https://github.com/saltstack/salt-bootstrap
