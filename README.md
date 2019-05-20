@@ -5,7 +5,7 @@ Configuration for consul cluster deployment with automatic SaltStack provision
 ## Usage Example:
 
 ```console
-user@host:~$ terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
+terraform apply -var='vsphere_user=user' -var='vsphere_server=vcsa' -var='vsphere_password=password'
 ```
 
 #### main.tf:
