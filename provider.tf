@@ -5,3 +5,12 @@ provider "vsphere" {
 
   allow_unverified_ssl = true
 }
+
+# terraform {
+#   backend "consul" {
+#     address = "consul-server-0.its.local:8500"
+#     scheme  = "http"
+#     path    = "terraform/state"
+#     datacenter = "its-dc"
+#   }
+# }

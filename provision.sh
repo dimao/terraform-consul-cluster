@@ -1,5 +1,5 @@
 #! /bin/bash
-BOOTSTRAP_SALT_CHECKSUM='23728e4b5e54f564062070e3be53c5602b55c24c9a76671968abbf3d609258cb'
+BOOTSTRAP_SALT_CHECKSUM='46fb5e4b7815efafd69fd703f033fe86e7b584b6770f7e0b936995bcae1cedd8'
 SALT_VERSION='v2019.2.0'
 
 curl -o bootstrap-salt.sh -L https://bootstrap.saltstack.com
