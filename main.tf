@@ -38,6 +38,7 @@ module "prometheus" {
   memory         = "2048"
 
   provision             = "true"
+  backup = "true"
   private_key_path      = "~/.ssh/id_rsa"
   provision_script_path = "provision.sh"
   tag_name              = "consul"
